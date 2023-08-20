@@ -8,6 +8,7 @@ function purchaseItems(data){
     const purchaseItemPrice = parseFloat(purchaseItemPriceString) ;
     originalPrice = originalPrice + purchaseItemPrice;
     setElementInnerText("total-price", originalPrice);
+    setElementInnerText('total-price-excludes-discount', originalPrice);
     const purchaseItemEntry = document.getElementById('purchase-items-entry')
     const count = purchaseItemEntry.childElementCount;
     const p = document.createElement('p');

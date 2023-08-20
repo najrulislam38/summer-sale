@@ -44,6 +44,15 @@ document.getElementById('back-to-home').addEventListener('click', function(){
     setElementInnerText("total-price", 0.00);
     setElementInnerText('discount', 0.00);
     setElementInnerText('total-price-excludes-discount', 0.00);
+    originalPrice = 0;
+    // if (originalPrice <= 0){
+    //     console.log(makePurchase);
+    // }
+    // if (originalPrice < 200){
+    //     console.log("ata 200 theke soto");
+    // }
+    makePurchase.setAttribute('disabled', 'true');
+    couponApplyButton.setAttribute('disabled', 'true');
 
 })
 

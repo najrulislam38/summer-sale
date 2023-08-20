@@ -51,13 +51,6 @@ document.getElementById('back-to-home').addEventListener('click', function(){
 
 })
 
-document.getElementById('get-coupon-btn').addEventListener('click', function(){
-    const couponCode = this.innerText;
-    const couponInputField = document.getElementById('coupon-field');
-    if (originalPrice >= 200){
-        couponInputField.value = couponCode;
-    }
-})
 
 
 function setElementInnerText(elementId, price){

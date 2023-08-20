@@ -1,6 +1,6 @@
 let originalPrice = 0;
 const makePurchase = document.getElementById('make-purchase');
-const couponApplyButton = document.getElementById('apply-btn')
+const couponApplyButton = document.getElementById('apply-btn');
 
 function purchaseItems(data){
     const purchaseItemName = data.childNodes[5].innerText;
@@ -36,7 +36,7 @@ couponApplyButton.addEventListener('click', function(){
         setElementInnerText('total-price-excludes-discount', originalPrice);
     }
     couponInputField.value = "";
-})
+});
 
 document.getElementById('back-to-home').addEventListener('click', function(){
     const purchaseItemsEntry = document.getElementById('purchase-items-entry');
@@ -45,12 +45,6 @@ document.getElementById('back-to-home').addEventListener('click', function(){
     setElementInnerText('discount', 0.00);
     setElementInnerText('total-price-excludes-discount', 0.00);
     originalPrice = 0;
-    // if (originalPrice <= 0){
-    //     console.log(makePurchase);
-    // }
-    // if (originalPrice < 200){
-    //     console.log("ata 200 theke soto");
-    // }
     makePurchase.setAttribute('disabled', 'true');
     couponApplyButton.setAttribute('disabled', 'true');
 
